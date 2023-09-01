@@ -1,0 +1,358 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    height: 1000px;
+    width: 100%;
+    background-color: #cecece;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.2em;
+}
+
+header{
+    margin: 5px;
+    width: 100%;
+    height: 120px;
+    background-color: rgb(244, 244, 248);
+    display: flex;
+    flex-direction: row;
+
+}
+
+#header-logo{
+    width: 20%;
+}
+
+#header-logo img{
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+#header-menu{
+    width: 80%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+#header-menu nav ul{
+    display: flex;
+    gap: 5rem;
+
+}
+
+#header-menu nav ul li{
+    list-style: none;
+    padding: 15px;
+    font-size: 1.5em;
+
+}
+
+#header-menu nav ul li a{
+    text-decoration: none;
+}
+
+#header-menu nav ul li a:hover{
+    font-size: 2em;
+    color:dodgerblue;
+}
+
+#banners{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-end;
+    margin: 5px;
+}
+
+.img-banner{
+    width: 33.33%;
+}
+
+.img-banner img {
+    height:95%;
+    object-fit: cover;
+    margin: 5px auto;
+}
+
+article{
+    margin: 5px;
+    height: 200px;
+    display: flex;
+    background-color: rgb(244, 244, 248);
+    align-items: center;
+}
+
+#two-container{
+    width: 20%;
+}
+#two-container img{
+    width: 100%;
+}
+
+#two-container-content{
+    width: 80%;
+    margin: 20px;
+}
+
+section{
+    margin: 5px;
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+}
+.img-anuncios{
+    width: 22%;
+}
+
+.img-anuncios img{
+    height: 98%;
+}
+
+footer {
+    margin: 5px;
+    display: flex;
+    background-color: #5a5a5a;
+    height: 300px;
+    color: white;
+}
+.coluna {
+    width: 33.33%;
+    padding: 15px;
+}
+
+.coluna ul{
+    list-style: none;
+    justify-content: space-around;
+}
+
+.coluna ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.coluna ul li a:hover{
+    color: blue;
+}
+
+@keyframes animacaoTopBottom {
+    0% { bottom: 25px; }
+    50% { bottom: 0px; }
+    100% { bottom: 25px;}
+}
+#whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+    animation: animacaoTopBottom infinite 1s;
+}
+#whatsapp img {
+    width: 100px;
+}
+
+/* QUEM-SOMOS */
+main{
+    display: flex;
+    align-items: center;
+}
+
+aside{
+    width: 20%;
+}
+#logo-aside{
+    display: flex;
+}
+
+#logo-aside img{
+    width:70%;
+    margin: 0 auto;
+}
+
+aside h1{
+    color: rgb(54, 3, 54);
+    text-align: center;
+    font-size: 1.8em;
+}
+
+#cabecalho-content{
+    width: 80%;
+}
+
+.article-content ul{
+    list-style: none;
+}
+
+/* PRODUTOS */
+
+#table-content{
+    margin: 10px auto;
+    text-align: center;
+    border: solid 12px rgb(57, 8, 57);
+    border-radius: 20px;
+    padding: 6px;
+}
+
+#table-content th{
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+#table-content tr, td{
+    font-size: 1.2em;
+}
+
+/* SERVIÇOS */
+form, label{
+    display: block;
+    padding: 10px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+form{
+    font-size: 1.2em;
+    margin: 0 auto;
+    background-color: rgba(167, 165, 165, 0.5);
+    width: 1200px; 
+}
+
+legend{
+    font-size: 1.5em;
+    font-style: italic;
+    color: rgb(121, 26, 121);
+}
+
+label{
+    text-align: left;
+    font-size: 1.2em;
+}
+
+input {
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 0.9em;
+    width: 1150px;
+    height: 35px;
+    text-transform:capitalize;
+}
+
+hr {
+    margin: 5px;
+    border: dotted 1px rgb(121, 26, 121);
+}
+
+#gato {
+    width: 50px;
+    float: left;
+    margin: 10px;
+}
+
+#cachorro {
+    width: 50px;
+    float: left;
+    margin: 10px;
+}
+
+#idade-animal{
+    width: 150px;
+}
+
+#hora-servico{
+    width: 395px;
+    margin:8px;
+    font-size: 0.9em;
+}
+
+#pequeno{
+    width: 50px;
+    float: left;
+    margin: 10px;
+}
+
+#medio{
+    width: 50px;
+    float: left;
+    margin: 10px;
+}
+
+#grande{
+    width: 50px;
+    float: left;
+    margin: 10px;
+}
+
+#banho-tosa {
+    width: 50px;
+    float: left;
+    margin: 10px;
+}
+
+#banho {
+    width: 50px;
+    float: left;
+    margin: 10px;
+}
+
+#tosa {
+    width: 50px;
+    float: left;
+    margin: 10px;
+}
+
+#consulta {
+    width: 50px;
+    float: left;
+    margin: 10px;
+}
+
+#form-cabecalho-content{
+    width: 80%;
+}
+
+#form-cabecalho-content h1{
+    text-align: center;
+}
+
+#selecao {
+    width: 80px;
+    margin: 10px;
+}
+
+select{
+    font-size: 1.1em;
+    width:395px;
+}
+
+#botoes{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+
+.button-success, 
+.button-warning {    
+	color: white;
+	border-radius: 35px;
+    border: solid 5px white;
+	font-size: 1.3em;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    height: 80px;
+    margin: 15px;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+}
+
+.button-success {
+	background: rgb(235, 98, 176);
+	
+}
+
+.button-warning {
+	background:rgb(235, 98, 176);
+}
+
+

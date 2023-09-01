@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços | 4Patas</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div id="whatsapp">
+        <img src="img/whatsapp.webp" alt="">
+    </div>
+    
+    <header>
+        <div id="header-logo">
+            <img src="img/logo-4patas.png" alt="logo PetShop 4Patas" title="logo" />
+        </div>
+
+        <div id="header-menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="servico.html">Serviços</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <aside>
+            <div id="logo-aside">
+                <img src="img/logo-4patas.png" alt="" />
+            </div>
+            <h1>Agendamento</h1>
+        </aside>
+        <div id="form-cabecalho-content">
+            <h1>Preencha o formulário abaixo para agendar um dos nossos serviços.</h1>
+            <br />
+            <form method="POST" action="cadastro.php">
+               <fieldset>
+                    <legend><strong>Dados Pessoais</strong></legend>
+                    <label>Nome do Tutor:</label>&nbsp;<input type="text" id="nome-tutor" name="nome-tutor" maxlength="60" required/>
+                    <label>Endereço:</label>&nbsp;<input type="text" id="endereco-tutor" name="endereco-tutor" maxlength="80"  required/>
+                    <label>Data de Nascimento:</label>&nbsp;<input type="date" id="dataNascimento-tutor" name="dataNascimento-tutor" required/>
+                    <label>Telefone:</label>&nbsp;<input type="text" id="tel-tutor" name="tel-tutor" placeholder="(00) 00000-0000" required/>
+                <br /><br/ >
+                </fieldset>
+               <br />
+               
+               <fieldset>
+                    <legend><strong>Dados do Pet</strong></legend>
+                    <label>Nome do Animal:</label>&nbsp;<input type="text" id="nome-tutor" name="nome-tutor" maxlength="60" required/>
+                    <br /><br />
+                    <hr />
+                    <label>Tipo:</label>
+                    <input type="radio" name="animal" id="gato" /><label>Gato</label>
+                    <input type="radio" name="animal" id="cachorro" /><label>Cachorro</label>
+                    <br />
+                    <hr />
+                    <label>Idade do Animal: </label>&nbsp;<input type="number" id="idade-animal" name="idade-animal" /> <em>anos</em>
+                    <br /><br />
+                    <hr />
+                    <label>Porte do Animal:</label>
+                    <input type="radio" name="porte" id="pequeno" /><label>Pequeno</label>
+                    <input type="radio" name="porte" id="medio" /><label>Médio</label>
+                    <input type="radio" name="porte" id="grande" /><label>Grande</label>
+                    <br />
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>Serviço</strong></legend>
+                    <label>Escolha o serviço desejado:</label>
+                    <input type="checkbox" name="banho-tosa" id="banho-tosa" /><label>Banho & Tosa</label>
+                    <input type="checkbox" name="banho" id="banho" /><label>Banho</label>
+                    <input type="checkbox" name="tosa" id="tosa" /><label>Tosa</label>
+                    <input type="checkbox" name="consulta" id="consulta" /><label>Consulta Veterinária</label>
+                    <br />
+                    <hr />
+                    <label>Escolha o dia da semana:</label>
+                    <div id="selecao">
+                        <select>
+                            <option></option>
+                            <option>Segunda-feira</option>
+                            <option>Terça-feira</option>
+                            <option>Quarta-feira</option>
+                            <option>Quinta-feira</option>
+                            <option>Sexta-feira</option>
+                            <option>Sábado</option>
+                        </select>
+                    </div>
+                    <hr />
+                    <label>Escolha o dia e o horário:</label>
+                    <input type="datetime-local" name="hora-servico" id="hora-servico" />
+                    <br /><br />
+                    <hr />
+                </fieldset>
+               <br />
+            <div id="botoes">
+                <button class="button-success" type="submit">Enviar</button>
+                <button class="button-warning" type="reset">Cancelar</button>
+            </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="coluna">
+            <h3><strong>Endereço</strong></h3>
+            <address>
+                Estrada Barão de Aquiraz, 980
+                <br />
+                Messejana
+                <br />
+                Fortaleza - CE
+                <br />
+                85 3459.0352 | 85 99856.8548 WhastApp
+            </address>
+        </div>
+        <div class="coluna">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.8737957602975!2d-38.490927924116114!3d-3.8372568437374492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7500124512c31%3A0x679e68d19917029e!2sLa%20Casita%20Cl%C3%ADnica%20Veterin%C3%A1ria%20e%20Pet%20Shop!5e0!3m2!1spt-BR!2sbr!4v1693153244100!5m2!1spt-BR!2sbr" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="coluna">
+            <h3><strong>Redes Sociais</strong></h3>             
+            <ul>
+                <li>
+                    <a target="_blank" href="https://www.facebook.com/people/La-Casita/100063594462099/">
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.instagram.com/lacasitapet/">
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">
+                        Canal do Youtube
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
